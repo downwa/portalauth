@@ -5,6 +5,9 @@ package com.iglooware;
  * with a notification message and/or an associated image 
  * (like msn online/offline notifications).
  * 
+ * @author daniele piras
+ * @author Warren Downs
+ * 
  * Toaster panel in windows system follow the taskbar; So if
  * the taskbar is into the bottom the panel coming from the bottom
  * and if the taskbar is on the top then the panel coming from the top.
@@ -33,13 +36,6 @@ import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.border.*;
 
-/**
- * Class to show tosters in multiplatform
- * 
- * @author daniele piras
- * @author Warren Downs
- * 
- */
 public class Toaster  {
 	private int toasterWidth = 300;
 	private int toasterHeight = 80;

@@ -1,1 +1,1 @@
-for path in *.java *.sh LICENSE README.md Makefile*; do git add -v $path; done || true
+for path in com/ *.java *.sh LICENSE README.md Makefile*; do git add -v $path; done || true
