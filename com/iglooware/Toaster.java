@@ -5,7 +5,7 @@ package com.iglooware;
  * with a notification message and/or an associated image 
  * (like msn online/offline notifications).
  * 
- * @author daniele piras
+ * @author Daniele Piras
  * @author Warren Downs
  * 
  * Toaster panel in windows system follow the taskbar; So if
