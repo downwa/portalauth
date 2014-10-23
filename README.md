@@ -1,4 +1,4 @@
 portalauth
 ==========
 
-Notify iglooportal administrator of users needing to authenticate linking to site.
+Notify iglooportal administrator of users needing to authenticate, with link to web app.
