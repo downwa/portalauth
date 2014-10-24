@@ -11,9 +11,8 @@ public static void main(String[] args) {
   toasterManager.setDisplayTime(4000);
   while(true) {
     try {
-      System.out.println("Test Showing");
       toasterManager.showToaster(null, "Activate Users","http://192.168.200.55/admin/bristolinn/","Click to activate.");
-      Thread.sleep(50000);
+      Thread.sleep(10000);
     }
     catch(Exception ex) {}
   }

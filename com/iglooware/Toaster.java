@@ -40,7 +40,7 @@ public class Toaster  {
 	private int toasterWidth = 300;
 	private int toasterHeight = 80;
 	private int step = 20; // Step for the toaster
-	private int stepTime = 2000;
+	private int stepTime = 20;
 	private int displayTime = 3000;
 	private int currentNumberOfToaster = 0;
 	private int maxToaster = 0; // Last opened toaster
@@ -202,23 +202,16 @@ public class Toaster  {
 		 * @throws InterruptedException 
 		 */
 		protected void animateVertically( int posx, int fromY, int toY ) throws InterruptedException {
-			
-			toaster.setLocation( 1379, 2234 );
-System.out.println("getLocation()"+toaster.getLocation());        
-          toaster.setVisible(true);
-Thread.sleep(stepTime);
-System.out.println("setLocation("+posx+","+fromY+")");        
+      toaster.setVisible(true);
 			toaster.setLocation( posx, fromY );
 			if ( toY < fromY ) {
 				for (int i = fromY; i > toY; i -= step) {
-System.out.println("setLocation("+posx+","+i+")");				
 					toaster.setLocation(posx, i);
 					Thread.sleep(stepTime);
 				}
 			}
 			else {
 				for (int i = fromY; i < toY; i += step) {
-System.out.println("setLocation("+posx+","+i+")");        
 					toaster.setLocation(posx, i);
 					Thread.sleep(stepTime);
 				}
@@ -276,8 +269,6 @@ System.out.println("setLocation("+posx+","+i+")");
 				currentNumberOfToaster++;
 				maxToaster++;
 				
-      Thread.sleep(2000);
-      System.out.println("#5");
 				animateVertically( posx, startYPosition, stopYPosition );
 				Thread.sleep(displayTime);
 				animateVertically( posx, stopYPosition, startYPosition );
